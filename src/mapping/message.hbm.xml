@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="beans">
+  <class name="Message" table="message">
+  
+   <id name="id" type="int">
+            <column name="ID" />
+            <generator class="native" />
+   </id>
+        
+   <property name="idEmetteur" type="int">        
+   </property>
+   
+   <property name="idRecepteur" type="int">        
+   </property>
+   
+   <property name="contenu" type="java.lang.String">        
+   </property>
+   
+   <property name="date" type="java.util.Date">        
+   </property>
+   
+   <property name="lu" type="boolean">        
+   </property>
+   
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="beans">
+    <class name="Utilisateur" table="utilisateur">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="native" />
+        </id>
+        
+        <property name="nom" type="java.lang.String">        
+        </property>
+        
+        <property name="prenom" type="java.lang.String">        
+        </property>
+        
+        <property name="sexe" type="java.lang.String">        
+        </property>
+        
+        <property name="login" type="java.lang.String">        
+        </property>
+    
+        <property name="password" type="java.lang.String">
+        </property>
+        
+        <property name="photo" type="java.lang.String">        
+        </property>
+            
+        <property name="questionSecrete" type="java.lang.String">        
+        </property>
+        
+        <property name="reponse" type="java.lang.String">        
+        </property>
+    </class>
+</hibernate-mapping>
